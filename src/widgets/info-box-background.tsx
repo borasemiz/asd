@@ -10,16 +10,18 @@ export interface InfoBoxBackgroundProps extends InfoBoxPropsBase {
 }
 
 
-export const InfoBoxBackground = (props: InfoBoxBackgroundProps): React.ReactElement => (
-  <div className={ `info-box bg-${props.backgroundClassName}` }>
-    <span className="info-box-icon">
-      <i className={ `far fa-${props.iconName}` }></i>
-    </span>
+export function InfoBoxBackground(props: InfoBoxBackgroundProps): React.ReactElement {
+  return (
+    <div className={ `info-box bg-${props.backgroundClassName}` }>
+      <span className="info-box-icon">
+        <i className={ `far fa-${props.iconName}` }></i>
+      </span>
 
-    <div className="info-box-content">
-      <span className="info-box-text">{ props.title }</span>
-      <span className="info-box-number">{ props.text }</span>
-      {props.children}
+      <div className="info-box-content">
+        <span className="info-box-text">{ props.title }</span>
+        <span className="info-box-number">{ props.text }</span>
+        {props.children}
+      </div>
     </div>
-  </div>
-);
+  );
+};

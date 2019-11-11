@@ -7,7 +7,7 @@ import {
 
 import { Navbar } from './navbar';
 import { Sidebar } from './sidebar';
-import { Widgets } from './pages/widgets';
+import Widgets from './pages/widgets';
 
 export default (): React.ReactElement => (
   <Router>
