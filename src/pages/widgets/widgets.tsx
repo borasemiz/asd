@@ -102,32 +102,31 @@ export const Widgets = (): React.ReactElement => (
         <h5 className="mb-2">Abilities</h5>
         <div className="row">
           <div className="col-md-3">
-            <div className="card card-primary collapsed-card">
+            <div className="card collapsed-card">
               <div className="card-header">
                 <h3 className="card-title">Expandable</h3>
-
                 <div className="card-tools">
-                  <button type="button" className="btn btn-tool" data-card-widget="collapse"><i className="fas fa-plus"></i>
+                  <button type="button" className="btn btn-tool" data-card-widget="collapse">
+                    <i className="fas fa-plus"></i>
                   </button>
                 </div>
-                
               </div>
               
               <div className="card-body">
                 The body of the card
               </div>
-              
             </div>
             
           </div>
           
           <div className="col-md-3">
-            <div className="card card-success">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Collapsable</h3>
 
                 <div className="card-tools">
-                  <button type="button" className="btn btn-tool" data-card-widget="collapse"><i className="fas fa-minus"></i>
+                  <button type="button" className="btn btn-tool" data-card-widget="collapse">
+                    <i className="fas fa-minus"></i>
                   </button>
                 </div>
                 
@@ -142,12 +141,13 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-warning">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Removable</h3>
 
                 <div className="card-tools">
-                  <button type="button" className="btn btn-tool" data-card-widget="remove"><i className="fas fa-times"></i>
+                  <button type="button" className="btn btn-tool" data-card-widget="remove">
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
                 
@@ -162,7 +162,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-danger">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Maximizable</h3>
 
@@ -186,7 +186,7 @@ export const Widgets = (): React.ReactElement => (
 
         <div className="row">
           <div className="col-md-3">
-            <div className="card card-primary">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Card Refresh</h3>
 
@@ -208,7 +208,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-success">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">All together</h3>
 
@@ -230,7 +230,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-warning">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Loading state</h3>
               </div>
@@ -248,7 +248,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-danger">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Loading state (dark)</h3>
               </div>
@@ -274,7 +274,7 @@ export const Widgets = (): React.ReactElement => (
 
         <div className="row">
           <div className="col-md-3">
-            <div className="card card-primary">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Primary Outline</h3>
 
@@ -294,7 +294,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-success">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Success Outline</h3>
 
@@ -314,7 +314,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-warning">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Warning Outline</h3>
 
@@ -334,7 +334,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-danger">
+            <div className="card">
               <div className="card-header">
                 <h3 className="card-title">Danger Outline</h3>
               </div>
@@ -351,7 +351,7 @@ export const Widgets = (): React.ReactElement => (
 
         <div className="row">
           <div className="col-md-3">
-            <div className="card card-outline card-primary">
+            <div className="card card-outline">
               <div className="card-header">
                 <h3 className="card-title">Primary Outline</h3>
 
@@ -371,7 +371,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-outline card-success">
+            <div className="card card-outline">
               <div className="card-header">
                 <h3 className="card-title">Success Outline</h3>
 
@@ -391,7 +391,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-outline card-warning">
+            <div className="card card-outline">
               <div className="card-header">
                 <h3 className="card-title">Warning Outline</h3>
 
@@ -411,7 +411,7 @@ export const Widgets = (): React.ReactElement => (
           </div>
           
           <div className="col-md-3">
-            <div className="card card-outline card-danger">
+            <div className="card card-outline">
               <div className="card-header">
                 <h3 className="card-title">Danger Outline</h3>
               </div>
