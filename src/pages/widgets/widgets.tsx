@@ -1,11 +1,10 @@
 import React from 'react';
 
 import { SectionInfoBoxes } from './section-info-boxes';
-import { InfoBoxBackground, InfoBoxBackgroundGradient } from '../../widgets';
-import { InfoBoxProgress } from '../../widgets/info-box-progress';
 import { SectionInfoBoxBg } from './section-info-box-bg';
-import { ProgressBar } from '../../ui-elements/general';
 import { SectionInfoBoxGradients } from './section-info-box-gradients';
+import { SmallBox } from '../../widgets';
+import { LoadingOverlay } from '../../ui-elements/general';
 
 export const Widgets = (): React.ReactElement => (
   <React.Fragment>
@@ -34,125 +33,70 @@ export const Widgets = (): React.ReactElement => (
         <h5 className="mb-2 mt-4">Small Box</h5>
         <div className="row">
           <div className="col-lg-3 col-6">
-            
-            <div className="small-box bg-info">
-              <div className="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
-              </div>
-              <div className="icon">
-                <i className="fas fa-shopping-cart"></i>
-              </div>
-              <a href="#" className="small-box-footer">
-                More info <i className="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
+            <SmallBox
+              backgroundClassName="info"
+              value="150"
+              title="New Orders"
+              linkText="More info"
+              renderIcon={ () => <i className="fas fa-shopping-cart"></i> }
+            />
           </div>
           
           <div className="col-lg-3 col-6">
-            
-            <div className="small-box bg-success">
-              <div className="inner">
-                <h3>53<sup style={ { fontSize: '20px' }}>%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div className="icon">
-                <i className="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" className="small-box-footer">
-                More info <i className="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
+            <SmallBox
+              backgroundClassName="success"
+              value="53%"
+              title="Bounce Rate"
+              linkText="More info"
+              renderIcon={ () => <i className="ion ion-stats-bars"></i> }
+            />
           </div>
           
           <div className="col-lg-3 col-6">
-            
-            <div className="small-box bg-warning">
-              <div className="inner">
-                <h3>44</h3>
-
-                <p>User Registrations</p>
-              </div>
-              <div className="icon">
-                <i className="fas fa-user-plus"></i>
-              </div>
-              <a href="#" className="small-box-footer">
-                More info <i className="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
+            <SmallBox
+              backgroundClassName="warning"
+              value="44"
+              title="User Registrations"
+              linkText="More info"
+              renderIcon={ () => <i className="fas fa-user-plus"></i> }
+            />
           </div>
           
           <div className="col-lg-3 col-6">
-            
-            <div className="small-box bg-danger">
-              <div className="inner">
-                <h3>65</h3>
-
-                <p>Unique Visitors</p>
-              </div>
-              <div className="icon">
-                <i className="fas fa-chart-pie"></i>
-              </div>
-              <a href="#" className="small-box-footer">
-                More info <i className="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
+            <SmallBox
+              backgroundClassName="danger"
+              value="65"
+              title="Unique Visitors"
+              linkText="More info"
+              renderIcon={ () => <i className="fas fa-chart-pie"></i> }
+            />
           </div>
-          
         </div>
-        
-
         
         <div className="row">
           <div className="col-lg-3 col-6">
-            
-            <div className="small-box bg-info">
-              
-              <div className="overlay">
-                <i className="fas fa-3x fa-sync-alt"></i>
-              </div>
-              
-              <div className="inner">
-                <h3>150</h3>
-
-                <p>New Orders</p>
-              </div>
-              <div className="icon">
-                <i className="fas fa-shopping-cart"></i>
-              </div>
-              <a href="#" className="small-box-footer">
-                More info <i className="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
+            <SmallBox
+              backgroundClassName="info"
+              value="150"
+              title="New Orders"
+              linkText="More info"
+              renderIcon={ () => <i className="fas fa-shopping-cart"></i> }
+              isLoading={true}
+            />
           </div>
           
           <div className="col-lg-3 col-6">
-            
-            <div className="small-box bg-success">
-              
-              <div className="overlay dark">
-                <i className="fas fa-3x fa-sync-alt"></i>
-              </div>
-              
-              <div className="inner">
-                <h3>53<sup style={{ fontSize: '20px' }}>%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div className="icon">
-                <i className="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" className="small-box-footer">
-                More info <i className="fas fa-arrow-circle-right"></i>
-              </a>
-            </div>
+            <SmallBox
+              backgroundClassName="success"
+              value="53%"
+              title="Bounce Rate"
+              linkText="More info"
+              isLoading={true}
+              renderIcon={() => <i className="ion ion-stats-bars"></i>}
+              renderLoading={() => <LoadingOverlay className="dark" />}
+            />
           </div>
-          
         </div>
-        
-
         
         <h4 className="mb-2 mt-4">Cards</h4>
         <h5 className="mb-2">Abilities</h5>
