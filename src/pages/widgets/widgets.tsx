@@ -5,6 +5,7 @@ import { SectionInfoBoxBg } from './section-info-box-bg';
 import { SectionInfoBoxGradients } from './section-info-box-gradients';
 import { SmallBox } from '../../widgets';
 import { LoadingOverlay } from '../../ui-elements/general';
+import { MaximizableCard } from '../../widgets/card/maximizable-card';
 
 export const Widgets = (): React.ReactElement => (
   <React.Fragment>
@@ -102,6 +103,11 @@ export const Widgets = (): React.ReactElement => (
         <h5 className="mb-2">Abilities</h5>
         <div className="row">
           <div className="col-md-3">
+            
+            <MaximizableCard headerTitle="Fullscreen">
+              <span>Card Body</span>
+            </MaximizableCard>
+
             <div className="card collapsed-card">
               <div className="card-header">
                 <h3 className="card-title">Expandable</h3>
@@ -116,7 +122,6 @@ export const Widgets = (): React.ReactElement => (
                 The body of the card
               </div>
             </div>
-            
           </div>
           
           <div className="col-md-3">
