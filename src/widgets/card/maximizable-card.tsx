@@ -6,7 +6,7 @@ interface MaximizableCardState {
   isCardMaximized: boolean;
 }
 
-export function makeMaximizableCard(WrappedCard: any) {
+export function makeMaximizableCard(WrappedCard: React.ComponentType<CardProps>) {
   return class extends React.Component<CardProps, MaximizableCardState> {
     constructor(props: CardProps) {
       super(props);
